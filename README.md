@@ -129,4 +129,4 @@ The code in this repository is released under the MIT License; see `LICENSE`. CO
 
 ## Contact
 
-Daljit Singh — daljithathan@gmail.com
+<a href="https://daljithathan.github.io/">Daljit Singh</a> — daljithathan@gmail.com
