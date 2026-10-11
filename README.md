@@ -1,20 +1,20 @@
 # COCO Benchmark for YOLO and DETR Detectors
 
-I used these scripts to evaluate 15 object detectors from the YOLO and DETR families on COCO val2017. The results are used in Table 10 and Figs. 5 and 6 of my survey paper, **From Histograms to Hungarian Matching: A Critical Survey of the Evolution of Object Detection, 2001–2026**.
+I used these scripts to evaluate 15 object detectors from the YOLO and DETR families on COCO val2017. The results are used in Table 10 and Figs. 5 and 6 of our survey paper, **From Histograms to Hungarian Matching: A Critical Survey of the Evolution of Object Detection, 2001–2026**.
 
-**Authors:** Daljit Singh, Ajay Pal Singh Chauhan, and Alka Singla
+**Authors:** Daljit Singh, Ajay Pal Singh Chauhan and Alka Singla
 
-The repository contains the benchmark script, the results used for the paper, and a record of the software environment and evaluation settings. COCO images, annotations, and model weights are not included.
+The repository contains the benchmark script, the results used for the paper and a record of the software environment and evaluation settings. COCO images, annotations and model weights are not included.
 
 ## Files
 
 | File | What it does |
 | --- | --- |
-| `bench.py` | Evaluates COCO AP and records latency, parameter count, and FLOPs for each model. |
+| `bench.py` | Evaluates COCO AP and records latency, parameter count and FLOPs for each model. |
 | `make_outputs.py` | Builds the benchmark plots and updates Table 10 and the benchmark text in a Word manuscript. |
 | `requirements.txt` | Lists the Python packages and versions used for the recorded runs. |
 | `results/table10.csv` | Results for the 15 evaluated models. |
-| `results/env.json` | Hardware, software versions, repository revisions, and benchmark settings recorded during the runs. |
+| `results/env.json` | Hardware, software versions, repository revisions and benchmark settings recorded during the runs. |
 
 ## Environment used
 
@@ -53,9 +53,9 @@ The legacy YOLO repositories and weights are expected at these paths:
 ~/yolov13/   # commit 7328994; yolov13s.pt and yolov13l.pt
 ```
 
-YOLOv12 weights (`yolo12s.pt`, `yolo12m.pt`, and `yolo12l.pt`) are obtained through the Ultralytics package. DETR, Deformable DETR, RT-DETRv2, and D-FINE are loaded through Hugging Face Transformers. The YOLOv13 runs use the `ultralytics` package from the local `~/yolov13` checkout.
+YOLOv12 weights (`yolo12s.pt`, `yolo12m.pt` and `yolo12l.pt`) are obtained through the Ultralytics package. DETR, Deformable DETR, RT-DETRv2 and D-FINE are loaded through Hugging Face Transformers. The YOLOv13 runs use the `ultralytics` package from the local `~/yolov13` checkout.
 
-The YOLOv5 and YOLOv7 checkpoint files are older pickle-based weights. Use the official repositories and weights, and only load checkpoints you trust.
+The YOLOv5 and YOLOv7 checkpoint files are older pickle-based weights. Use the official repositories and weights and only load checkpoints you trust.
 
 ## Running the benchmark
 
@@ -89,7 +89,7 @@ Build the plots and insert the updated benchmark table and text into a copy of y
 python make_outputs.py --csv results/table10.csv --env results/env.json --docx manuscript.docx --out manuscript_with_benchmark_results.docx
 ```
 
-The script writes the updated Word file and plot files in the working directory. Review the generated table, plots, captions, and benchmark description before using them in a manuscript.
+The script writes the updated Word file and plot files in the working directory. Review the generated table, plots, captions and benchmark description before using them in a manuscript.
 
 ## Benchmark protocol
 
@@ -111,7 +111,7 @@ The detailed environment and run records are in `results/env.json`.
 - The comparison was run on one GPU. Other jobs shared the GPU during some timing runs.
 - TensorRT and edge-device performance were not measured.
 - The Deformable DETR implementation uses PyTorch deformable attention rather than the original CUDA kernel, so its measured latency is an upper bound for that implementation.
-- YOLOv10, YOLO26, and RF-DETR are not included.
+- YOLOv10, YOLO26 and RF-DETR are not included.
 
 These results describe the tested models under this setup; they should not be read as a universal ranking across hardware or deployment environments.
 
@@ -119,13 +119,13 @@ These results describe the tested models under this setup; they should not be re
 
 If you use the scripts or the recorded results, please cite this repository:
 
-> Singh, D. (2026). *object-detection-survey-scripts* [Computer software]. GitHub. https://github.com/daljithathan/object-detection-survey-scripts
+> Singh, D. (2026). *object-detection-survey-scripts*. GitHub. https://github.com/daljithathan/object-detection-survey-scripts
 
-Associated manuscript: Daljit Singh, Ajay Pal Singh Chauhan, and Alka Singla, *From Histograms to Hungarian Matching: A Critical Survey of the Evolution of Object Detection, 2001–2026* (manuscript in preparation). The final journal citation will be added here when available.
+Associated manuscript: Daljit Singh, Ajay Pal Singh Chauhan and Alka Singla, *From Histograms to Hungarian Matching: A Critical Survey of the Evolution of Object Detection, 2001–2026* (manuscript in preparation). The final journal citation will be added here when available.
 
 ## License
 
-The code in this repository is released under the MIT License; see `LICENSE`. COCO, third-party repositories, pretrained weights, and external packages remain subject to their own licenses and terms.
+The code in this repository is released under the MIT License; see `LICENSE`. COCO, third-party repositories, pretrained weights and external packages remain subject to their own licenses and terms.
 
 ## Contact
 
