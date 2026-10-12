@@ -121,7 +121,7 @@ If you use the scripts or the recorded results, please cite this repository:
 
 > Singh, D. (2026). *object-detection-survey-scripts*. GitHub. https://github.com/daljithathan/object-detection-survey-scripts
 
-Associated manuscript: Daljit Singh, Ajay Pal Singh Chauhan and Alka Singla, *From Histograms to Hungarian Matching: A Critical Survey of the Evolution of Object Detection, 2001–2026* (manuscript in preparation). The final journal citation will be added here when available.
+Associated manuscript: Daljit Singh, Ajay Pal Singh Chauhan and Alka Singla, *From Histograms to Hungarian Matching: A Critical Survey of the Evolution of Object Detection, 2001–2026* (manuscript in preparation).
 
 ## License
 
