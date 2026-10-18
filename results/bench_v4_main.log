@@ -1,0 +1,854 @@
+ultralytics from /home/daljit/bench_env/lib/python3.14/site-packages/ultralytics  -> standard environment
+loading annotations into memory...
+Done (t=0.37s)
+creating index...
+index created!
+  baseline GPU: util=0.0%  mem_used=1711.0 MiB  -> results_v4/env.json
+
+===== YOLOv5-S
+Fusing layers... 
+YOLOv5s summary: 124 layers, 7,225,885 parameters, 0 gradients, 16.4 GFLOPs
+Loading and preparing results...
+DONE (t=2.92s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=35.08s).
+Accumulating evaluation results...
+DONE (t=7.68s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.375
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.562
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.409
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.218
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.424
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.489
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.311
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.521
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.581
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.391
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.643
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.735
+{'detector': 'YOLOv5-S', 'lineage': 'YOLO', 'ap': 37.5, 'ap50': 56.2, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2020, 'slice': '2020–2022', 'params_M': 7.2, 'flops_G': 16.4, 'gpu_util_pct': 0.3, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 1.472, 'lat_range': 0.002, 'lat_ci95': 0.0, 'n_repeats': 10, 'lat_mean': 1.474, 'lat_p95': 1.497, 'lat_model_ms': 1.111, 'timing': 'cuda_graph', 'lat_conf001_ms': 1.643, 'lat_eager_ms': 3.9}
+
+===== YOLOv5-M
+Fusing layers... 
+YOLOv5m summary: 168 layers, 21,172,173 parameters, 0 gradients, 48.9 GFLOPs
+Loading and preparing results...
+DONE (t=2.67s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=35.43s).
+Accumulating evaluation results...
+DONE (t=7.80s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.452
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.634
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.498
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.283
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.507
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.578
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.355
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.589
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.649
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.479
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.709
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.796
+{'detector': 'YOLOv5-M', 'lineage': 'YOLO', 'ap': 45.2, 'ap50': 63.4, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2020, 'slice': '2020–2022', 'params_M': 21.2, 'flops_G': 48.9, 'gpu_util_pct': 0.7, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.169, 'lat_range': 0.002, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 2.171, 'lat_p95': 2.207, 'lat_model_ms': 1.805, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.327, 'lat_eager_ms': 5.063}
+
+===== YOLOv5-L
+Fusing layers... 
+YOLOv5l summary: 212 layers, 46,533,693 parameters, 0 gradients, 109.0 GFLOPs
+Loading and preparing results...
+DONE (t=2.40s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=36.82s).
+Accumulating evaluation results...
+DONE (t=7.91s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.490
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.667
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.538
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.321
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.545
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.623
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.373
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.617
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.676
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.508
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.730
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.817
+{'detector': 'YOLOv5-L', 'lineage': 'YOLO', 'ap': 49.0, 'ap50': 66.7, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2020, 'slice': '2020–2022', 'params_M': 46.5, 'flops_G': 109.0, 'gpu_util_pct': 0.7, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.734, 'lat_range': 0.011, 'lat_ci95': 0.003, 'n_repeats': 10, 'lat_mean': 2.736, 'lat_p95': 2.766, 'lat_model_ms': 2.366, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.862, 'lat_eager_ms': 5.974}
+
+===== YOLOv7
+Fusing layers... 
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+RepConv.fuse_repvgg_block
+Loading and preparing results...
+DONE (t=1.31s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=28.41s).
+Accumulating evaluation results...
+DONE (t=5.83s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.511
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.693
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.557
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.352
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.559
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.665
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.384
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.641
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.695
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.548
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.743
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.842
+{'detector': 'YOLOv7', 'lineage': 'YOLO', 'ap': 51.1, 'ap50': 69.3, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2022, 'slice': '2020–2022', 'params_M': 36.9, 'flops_G': 104.5, 'gpu_util_pct': 1.0, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.816, 'lat_range': 0.008, 'lat_ci95': 0.002, 'n_repeats': 10, 'lat_mean': 2.817, 'lat_p95': 2.85, 'lat_model_ms': 2.407, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.892, 'lat_eager_ms': 6.022}
+
+===== DETR-R50
+Loading weights:   0%|          | 0/530 [00:00<?, ?it/s]Loading weights:  48%|████▊     | 252/530 [00:00<00:00, 2467.46it/s]Loading weights:  94%|█████████▍| 499/530 [00:00<00:00, 1771.42it/s]Loading weights: 100%|██████████| 530/530 [00:00<00:00, 1903.15it/s]
+[transformers] [1mDetrForObjectDetection LOAD REPORT[0m from: facebook/detr-resnet-50
+Key                                                            | Status     |  | 
+---------------------------------------------------------------+------------+--+-
+model.backbone.model.layer2.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer1.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer4.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer3.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading and preparing results...
+DONE (t=1.79s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=21.47s).
+Accumulating evaluation results...
+DONE (t=3.88s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.365
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.559
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.377
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.137
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.392
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.590
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.306
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.477
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.515
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.225
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.559
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.785
+{'detector': 'DETR-R50', 'lineage': 'DETR', 'ap': 36.5, 'ap50': 55.9, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2020, 'slice': '2020–2022', 'params_M': 41.5, 'flops_G': 77.1, 'gpu_util_pct': 0.3, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 3.21, 'lat_range': 0.001, 'lat_ci95': 0.0, 'n_repeats': 10, 'lat_mean': 3.209, 'lat_p95': 3.214, 'lat_model_ms': 3.175, 'timing': 'cuda_graph', 'lat_conf001_ms': 3.209, 'lat_eager_ms': 11.733}
+
+===== Deformable DETR-R50
+Loading weights:   0%|          | 0/545 [00:00<?, ?it/s]Loading weights:  46%|████▌     | 250/545 [00:00<00:00, 2422.07it/s]Loading weights:  90%|█████████ | 493/545 [00:00<00:00, 2169.23it/s]Loading weights: 100%|██████████| 545/545 [00:00<00:00, 2203.95it/s]
+[transformers] [1mDeformableDetrForObjectDetection LOAD REPORT[0m from: SenseTime/deformable-detr
+Key                                                            | Status     |  | 
+---------------------------------------------------------------+------------+--+-
+model.backbone.model.layer2.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer1.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer4.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer3.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  [FLOP count via run_inference failed] AttributeError("'NoneType' object has no attribute 'next_functions'")
+Loading and preparing results...
+DONE (t=1.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=21.47s).
+Accumulating evaluation results...
+DONE (t=5.69s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.404
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.586
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.437
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.194
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.433
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.595
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.332
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.546
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.587
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.333
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.639
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.811
+{'detector': 'Deformable DETR-R50', 'lineage': 'DETR', 'ap': 40.4, 'ap50': 58.6, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2021, 'slice': '2020–2022', 'params_M': 40.1, 'flops_G': 158.7, 'gpu_util_pct': 3.3, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 12.112, 'lat_range': 0.028, 'lat_ci95': 0.008, 'n_repeats': 10, 'lat_mean': 12.117, 'lat_p95': 12.157, 'lat_model_ms': 11.998, 'timing': 'cuda_graph', 'lat_conf001_ms': 12.136, 'lat_eager_ms': 18.296}
+
+===== YOLOv12-S
+YOLOv12s summary (fused): 159 layers, 9,261,840 parameters, 0 gradients, 23.3 GFLOPs
+  head: default=o2m  used=o2m
+Loading and preparing results...
+DONE (t=1.34s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=26.85s).
+Accumulating evaluation results...
+DONE (t=5.10s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.477
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.645
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.516
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.287
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.526
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.657
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.369
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.607
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.658
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.477
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.718
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.828
+{'detector': 'YOLOv12-S', 'lineage': 'YOLO', 'ap': 47.7, 'ap50': 64.5, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2025, 'slice': '2024–2026', 'params_M': 9.3, 'flops_G': 23.3, 'gpu_util_pct': 0.3, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.39, 'lat_range': 0.003, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 2.393, 'lat_p95': 2.425, 'lat_model_ms': 2.043, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.432, 'lat_eager_ms': 7.729}
+
+===== YOLOv12-M
+YOLOv12m summary (fused): 169 layers, 20,166,592 parameters, 0 gradients, 70.7 GFLOPs
+  head: default=o2m  used=o2m
+Loading and preparing results...
+DONE (t=1.61s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=23.96s).
+Accumulating evaluation results...
+DONE (t=4.28s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.523
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.694
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.568
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.353
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.580
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.690
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.389
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.645
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.695
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.527
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.753
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.849
+{'detector': 'YOLOv12-M', 'lineage': 'YOLO', 'ap': 52.3, 'ap50': 69.4, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2025, 'slice': '2024–2026', 'params_M': 20.2, 'flops_G': 70.7, 'gpu_util_pct': 1.0, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.958, 'lat_range': 0.006, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 2.964, 'lat_p95': 2.993, 'lat_model_ms': 2.597, 'timing': 'cuda_graph', 'lat_conf001_ms': 3.001, 'lat_eager_ms': 8.244}
+
+===== YOLOv12-L
+YOLOv12l summary (fused): 283 layers, 26,400,752 parameters, 0 gradients, 95.4 GFLOPs
+  head: default=o2m  used=o2m
+Loading and preparing results...
+DONE (t=1.50s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=23.52s).
+Accumulating evaluation results...
+DONE (t=4.28s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.535
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.704
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.582
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.365
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.593
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.695
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.397
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.656
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.706
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.535
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.766
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.862
+{'detector': 'YOLOv12-L', 'lineage': 'YOLO', 'ap': 53.5, 'ap50': 70.4, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2025, 'slice': '2024–2026', 'params_M': 26.4, 'flops_G': 95.4, 'gpu_util_pct': 1.0, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 4.566, 'lat_range': 0.004, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 4.568, 'lat_p95': 4.589, 'lat_model_ms': 4.228, 'timing': 'cuda_graph', 'lat_conf001_ms': 4.611, 'lat_eager_ms': 13.148}
+
+===== RT-DETRv2-S
+Loading weights:   0%|          | 0/529 [00:00<?, ?it/s]Loading weights:  62%|██████▏   | 326/529 [00:00<00:00, 3189.67it/s]Loading weights: 100%|██████████| 529/529 [00:00<00:00, 3916.71it/s]
+Loading and preparing results...
+DONE (t=4.20s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=40.65s).
+Accumulating evaluation results...
+DONE (t=11.44s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.481
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.650
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.521
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.301
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.512
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.641
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.371
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.631
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.700
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.526
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.738
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.855
+{'detector': 'RT-DETRv2-S', 'lineage': 'DETR', 'ap': 48.1, 'ap50': 65.0, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2024, 'slice': '2024–2026', 'params_M': 20.2, 'flops_G': 61.5, 'gpu_util_pct': 1.0, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 2.945, 'lat_range': 0.002, 'lat_ci95': 0.0, 'n_repeats': 10, 'lat_mean': 2.944, 'lat_p95': 2.973, 'lat_model_ms': 2.812, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.945, 'lat_eager_ms': 11.088}
+
+===== RT-DETRv2-M
+Loading weights:   0%|          | 0/644 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 213/644 [00:00<00:00, 2126.57it/s]Loading weights:  75%|███████▌  | 484/644 [00:00<00:00, 2467.66it/s]Loading weights: 100%|██████████| 644/644 [00:00<00:00, 2648.17it/s]
+Loading and preparing results...
+DONE (t=3.93s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=41.97s).
+Accumulating evaluation results...
+DONE (t=12.14s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.499
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.676
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.541
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.320
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.531
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.664
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.378
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.640
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.710
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.537
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.747
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.870
+{'detector': 'RT-DETRv2-M', 'lineage': 'DETR', 'ap': 49.9, 'ap50': 67.6, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2024, 'slice': '2024–2026', 'params_M': 31.4, 'flops_G': 93.6, 'gpu_util_pct': 1.3, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 3.813, 'lat_range': 0.003, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 3.811, 'lat_p95': 3.853, 'lat_model_ms': 3.68, 'timing': 'cuda_graph', 'lat_conf001_ms': 3.813, 'lat_eager_ms': 13.814}
+
+===== RT-DETRv2-L
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 251/770 [00:00<00:00, 2464.03it/s]Loading weights:  65%|██████▍   | 498/770 [00:00<00:00, 2090.34it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 2410.75it/s]
+Loading and preparing results...
+DONE (t=3.61s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=42.91s).
+Accumulating evaluation results...
+DONE (t=12.90s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.534
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.716
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.575
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.361
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.578
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.709
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.392
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.659
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.725
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.563
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.766
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.889
+{'detector': 'RT-DETRv2-L', 'lineage': 'DETR', 'ap': 53.4, 'ap50': 71.6, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2024, 'slice': '2024–2026', 'params_M': 42.9, 'flops_G': 137.8, 'gpu_util_pct': 1.3, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 4.792, 'lat_range': 0.002, 'lat_ci95': 0.0, 'n_repeats': 10, 'lat_mean': 4.789, 'lat_p95': 4.849, 'lat_model_ms': 4.659, 'timing': 'cuda_graph', 'lat_conf001_ms': 4.791, 'lat_eager_ms': 16.869}
+
+===== D-FINE-S
+Loading weights:   0%|          | 0/764 [00:00<?, ?it/s]Loading weights: 100%|██████████| 764/764 [00:00<00:00, 7962.23it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading and preparing results...
+DONE (t=2.89s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=43.03s).
+Accumulating evaluation results...
+DONE (t=11.66s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.485
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.654
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.525
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.296
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.520
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.655
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.373
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.628
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.699
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.509
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.747
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.876
+{'detector': 'D-FINE-S', 'lineage': 'DETR', 'ap': 48.5, 'ap50': 65.4, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2025, 'slice': '2024–2026', 'params_M': 10.3, 'flops_G': 27.8, 'gpu_util_pct': 1.0, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 3.68, 'lat_range': 0.007, 'lat_ci95': 0.002, 'n_repeats': 10, 'lat_mean': 3.678, 'lat_p95': 3.708, 'lat_model_ms': 3.548, 'timing': 'cuda_graph', 'lat_conf001_ms': 3.687, 'lat_eager_ms': 15.924}
+
+===== D-FINE-M
+Loading weights:   0%|          | 0/1009 [00:00<?, ?it/s]Loading weights:  72%|███████▏  | 727/1009 [00:00<00:00, 7267.03it/s]Loading weights: 100%|██████████| 1009/1009 [00:00<00:00, 7292.42it/s]
+Loading and preparing results...
+DONE (t=3.65s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=43.63s).
+Accumulating evaluation results...
+DONE (t=13.53s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.522
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.698
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.565
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.330
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.565
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.703
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.387
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.656
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.721
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.543
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.765
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.886
+{'detector': 'D-FINE-M', 'lineage': 'DETR', 'ap': 52.2, 'ap50': 69.8, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2025, 'slice': '2024–2026', 'params_M': 19.6, 'flops_G': 60.5, 'gpu_util_pct': 0.7, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 4.955, 'lat_range': 0.002, 'lat_ci95': 0.0, 'n_repeats': 10, 'lat_mean': 4.953, 'lat_p95': 4.997, 'lat_model_ms': 4.822, 'timing': 'cuda_graph', 'lat_conf001_ms': 4.955, 'lat_eager_ms': 20.532}
+
+===== D-FINE-L
+Loading weights:   0%|          | 0/1197 [00:00<?, ?it/s]Loading weights:  31%|███       | 368/1197 [00:00<00:00, 3660.42it/s]Loading weights:  61%|██████▏   | 735/1197 [00:00<00:00, 3015.47it/s]Loading weights:  89%|████████▊ | 1061/1197 [00:00<00:00, 3115.02it/s]Loading weights: 100%|██████████| 1197/1197 [00:00<00:00, 3143.00it/s]
+Loading and preparing results...
+DONE (t=2.92s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=44.90s).
+Accumulating evaluation results...
+DONE (t=12.26s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.539
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.717
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.583
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.361
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.580
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.720
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.395
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.664
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.731
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.566
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.773
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.894
+{'detector': 'D-FINE-L', 'lineage': 'DETR', 'ap': 53.9, 'ap50': 71.7, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2025, 'slice': '2024–2026', 'params_M': 31.2, 'flops_G': 95.7, 'gpu_util_pct': 1.3, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 6.111, 'lat_range': 0.005, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 6.103, 'lat_p95': 6.162, 'lat_model_ms': 5.977, 'timing': 'cuda_graph', 'lat_conf001_ms': 6.109, 'lat_eager_ms': 25.032}
+
+===== RF-DETR-S
+[2026-10-18 14:10:29] [INFO] rf-detr - Downloading pretrained weights for /home/daljit/.roboflow/models/rf-detr-small.pth
+/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 0.00/368M [00:00<?, ?iB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 47.0k/368M [00:00<39:22, 163kiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 79.0k/368M [00:00<44:32, 144kiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 127k/368M [00:00<28:23, 227kiB/s] /home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 159k/368M [00:00<26:18, 244kiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 213k/368M [00:00<19:50, 324kiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 271k/368M [00:00<16:32, 389kiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 367k/368M [00:01<11:44, 547kiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 479k/368M [00:01<09:02, 711kiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 623k/368M [00:01<06:59, 918kiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 831k/368M [00:01<05:05, 1.26MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 1.09M/368M [00:01<03:42, 1.73MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   0%|          | 1.44M/368M [00:01<02:50, 2.26MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   1%|          | 1.92M/368M [00:01<02:05, 3.07MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   1%|          | 2.58M/368M [00:01<01:31, 4.19MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   1%|          | 3.44M/368M [00:01<01:08, 5.61MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   1%|          | 4.59M/368M [00:01<00:50, 7.53MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   2%|▏         | 6.19M/368M [00:02<00:36, 10.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   2%|▏         | 7.97M/368M [00:02<00:29, 12.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   3%|▎         | 9.29M/368M [00:02<00:28, 13.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   3%|▎         | 11.3M/368M [00:02<00:25, 14.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   4%|▎         | 12.9M/368M [00:02<00:25, 14.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   4%|▍         | 15.0M/368M [00:02<00:23, 15.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   5%|▍         | 16.6M/368M [00:02<00:23, 15.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   5%|▌         | 18.6M/368M [00:02<00:22, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   6%|▌         | 20.3M/368M [00:02<00:22, 16.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   6%|▌         | 22.3M/368M [00:03<00:21, 16.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   7%|▋         | 23.9M/368M [00:03<00:22, 16.2MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   7%|▋         | 26.0M/368M [00:03<00:21, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   7%|▋         | 27.6M/368M [00:03<00:21, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   8%|▊         | 29.7M/368M [00:03<00:20, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   8%|▊         | 31.3M/368M [00:03<00:21, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   9%|▉         | 33.3M/368M [00:03<00:20, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:   9%|▉         | 34.9M/368M [00:03<00:21, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  10%|█         | 37.0M/368M [00:04<00:20, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  10%|█         | 38.6M/368M [00:04<00:21, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  11%|█         | 40.7M/368M [00:04<00:20, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  11%|█▏        | 42.3M/368M [00:04<00:20, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  12%|█▏        | 44.3M/368M [00:04<00:19, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  12%|█▏        | 46.0M/368M [00:04<00:19, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  13%|█▎        | 47.7M/368M [00:04<00:19, 17.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  13%|█▎        | 49.3M/368M [00:04<00:20, 16.2MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  14%|█▍        | 51.2M/368M [00:04<00:19, 17.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  14%|█▍        | 52.9M/368M [00:05<00:19, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  15%|█▍        | 54.5M/368M [00:05<00:19, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  15%|█▌        | 56.1M/368M [00:05<00:20, 16.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  16%|█▌        | 58.0M/368M [00:05<00:19, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  16%|█▌        | 59.6M/368M [00:05<00:19, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  17%|█▋        | 61.2M/368M [00:05<00:22, 14.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  17%|█▋        | 63.4M/368M [00:05<00:19, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  18%|█▊        | 65.0M/368M [00:05<00:21, 15.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  18%|█▊        | 67.1M/368M [00:06<00:23, 13.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  19%|█▉        | 70.3M/368M [00:06<00:17, 17.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  20%|█▉        | 72.1M/368M [00:06<00:19, 16.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  20%|██        | 74.4M/368M [00:06<00:21, 14.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  21%|██        | 77.6M/368M [00:06<00:16, 18.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  22%|██▏       | 79.5M/368M [00:06<00:18, 16.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  22%|██▏       | 81.7M/368M [00:06<00:20, 14.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  23%|██▎       | 84.9M/368M [00:07<00:16, 18.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  24%|██▎       | 86.9M/368M [00:07<00:17, 16.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  24%|██▍       | 89.0M/368M [00:07<00:19, 14.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  25%|██▌       | 92.3M/368M [00:07<00:15, 18.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  26%|██▌       | 94.2M/368M [00:07<00:17, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  26%|██▌       | 96.3M/368M [00:07<00:19, 14.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  27%|██▋       | 99.6M/368M [00:07<00:15, 18.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  28%|██▊       | 102M/368M [00:08<00:16, 16.9MiB/s] /home/daljit/.roboflow/models/rf-detr-small.pth:  28%|██▊       | 104M/368M [00:08<00:18, 14.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  29%|██▉       | 107M/368M [00:08<00:14, 18.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  30%|██▉       | 109M/368M [00:08<00:16, 16.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  30%|███       | 111M/368M [00:08<00:18, 14.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  31%|███       | 114M/368M [00:08<00:14, 18.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  32%|███▏      | 116M/368M [00:09<00:15, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  32%|███▏      | 118M/368M [00:09<00:18, 13.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  33%|███▎      | 120M/368M [00:09<00:21, 12.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  34%|███▎      | 124M/368M [00:09<00:18, 13.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  35%|███▍      | 128M/368M [00:09<00:17, 14.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  36%|███▌      | 131M/368M [00:10<00:13, 18.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  36%|███▌      | 133M/368M [00:10<00:14, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  37%|███▋      | 135M/368M [00:10<00:16, 14.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  38%|███▊      | 139M/368M [00:10<00:15, 15.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  39%|███▊      | 142M/368M [00:10<00:15, 15.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  40%|███▉      | 146M/368M [00:11<00:14, 16.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  41%|████      | 150M/368M [00:11<00:14, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  42%|████▏     | 153M/368M [00:11<00:13, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  43%|████▎     | 157M/368M [00:11<00:13, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  44%|████▎     | 161M/368M [00:12<00:13, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  45%|████▍     | 164M/368M [00:12<00:12, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  46%|████▌     | 168M/368M [00:12<00:12, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  47%|████▋     | 172M/368M [00:12<00:12, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  48%|████▊     | 175M/368M [00:12<00:12, 16.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  49%|████▊     | 179M/368M [00:13<00:11, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  50%|████▉     | 183M/368M [00:13<00:11, 16.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  51%|█████     | 186M/368M [00:13<00:11, 16.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  52%|█████▏    | 190M/368M [00:13<00:11, 16.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  53%|█████▎    | 194M/368M [00:14<00:10, 16.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  54%|█████▎    | 197M/368M [00:14<00:10, 16.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  55%|█████▍    | 201M/368M [00:14<00:11, 15.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  55%|█████▌    | 204M/368M [00:14<00:10, 15.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  56%|█████▋    | 208M/368M [00:15<00:10, 16.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  57%|█████▋    | 212M/368M [00:15<00:10, 16.2MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  58%|█████▊    | 215M/368M [00:15<00:09, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  59%|█████▉    | 219M/368M [00:15<00:09, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  60%|██████    | 223M/368M [00:16<00:09, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  61%|██████▏   | 226M/368M [00:16<00:08, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  62%|██████▏   | 230M/368M [00:16<00:08, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  63%|██████▎   | 234M/368M [00:16<00:08, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  64%|██████▍   | 237M/368M [00:16<00:08, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  65%|██████▌   | 239M/368M [00:17<00:07, 17.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  65%|██████▌   | 241M/368M [00:17<00:08, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  66%|██████▋   | 244M/368M [00:17<00:06, 19.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  67%|██████▋   | 246M/368M [00:17<00:07, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  67%|██████▋   | 248M/368M [00:17<00:07, 15.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  68%|██████▊   | 251M/368M [00:17<00:06, 18.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  69%|██████▉   | 253M/368M [00:17<00:07, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  69%|██████▉   | 256M/368M [00:18<00:07, 15.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  70%|███████   | 258M/368M [00:18<00:06, 18.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  71%|███████   | 260M/368M [00:18<00:07, 15.7MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  71%|███████▏  | 263M/368M [00:18<00:07, 15.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  72%|███████▏  | 266M/368M [00:18<00:05, 18.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  73%|███████▎  | 268M/368M [00:18<00:06, 16.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  73%|███████▎  | 270M/368M [00:19<00:06, 15.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  74%|███████▍  | 273M/368M [00:19<00:05, 18.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  75%|███████▍  | 275M/368M [00:19<00:06, 14.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  75%|███████▌  | 277M/368M [00:19<00:07, 12.2MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  76%|███████▌  | 280M/368M [00:19<00:07, 12.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  77%|███████▋  | 283M/368M [00:19<00:06, 14.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  78%|███████▊  | 287M/368M [00:20<00:05, 14.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  79%|███████▉  | 291M/368M [00:20<00:05, 15.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  80%|███████▉  | 294M/368M [00:20<00:04, 15.8MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  81%|████████  | 298M/368M [00:20<00:04, 16.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  82%|████████▏ | 301M/368M [00:21<00:04, 16.2MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  83%|████████▎ | 305M/368M [00:21<00:04, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  84%|████████▍ | 309M/368M [00:21<00:03, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  85%|████████▍ | 312M/368M [00:21<00:03, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  85%|████████▌ | 314M/368M [00:21<00:03, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  86%|████████▌ | 316M/368M [00:22<00:03, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  86%|████████▋ | 318M/368M [00:22<00:03, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  87%|████████▋ | 320M/368M [00:22<00:02, 17.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  87%|████████▋ | 321M/368M [00:22<00:02, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  88%|████████▊ | 323M/368M [00:22<00:02, 17.2MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  88%|████████▊ | 325M/368M [00:22<00:02, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  89%|████████▉ | 327M/368M [00:22<00:02, 17.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  89%|████████▉ | 329M/368M [00:22<00:02, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  90%|████████▉ | 330M/368M [00:22<00:02, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  90%|█████████ | 332M/368M [00:23<00:02, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  91%|█████████ | 334M/368M [00:23<00:02, 17.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  91%|█████████▏| 336M/368M [00:23<00:02, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  92%|█████████▏| 338M/368M [00:23<00:01, 17.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  92%|█████████▏| 340M/368M [00:23<00:01, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  93%|█████████▎| 341M/368M [00:23<00:01, 17.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  93%|█████████▎| 343M/368M [00:23<00:01, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  94%|█████████▎| 345M/368M [00:23<00:01, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  94%|█████████▍| 347M/368M [00:24<00:01, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  95%|█████████▍| 349M/368M [00:24<00:01, 17.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  95%|█████████▌| 351M/368M [00:24<00:01, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  96%|█████████▌| 352M/368M [00:24<00:00, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  96%|█████████▌| 354M/368M [00:24<00:00, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  97%|█████████▋| 356M/368M [00:24<00:00, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  97%|█████████▋| 358M/368M [00:24<00:00, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  98%|█████████▊| 360M/368M [00:24<00:00, 17.1MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  98%|█████████▊| 362M/368M [00:24<00:00, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  99%|█████████▊| 363M/368M [00:25<00:00, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth:  99%|█████████▉| 365M/368M [00:25<00:00, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth: 100%|█████████▉| 367M/368M [00:25<00:00, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-small.pth: 100%|██████████| 368M/368M [00:25<00:00, 15.3MiB/s]
+[2026-10-18 14:10:56] [INFO] rf-detr - MD5 validation successful for /home/daljit/.roboflow/models/rf-detr-small.pth
+[2026-10-18 14:10:56] [WARNING] rf-detr - Using a different number of positional encodings than DINOv2, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 14:10:56] [WARNING] rf-detr - Using patch size 16 instead of 14, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 14:10:57] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-small.pth already exists with correct MD5 hash.
+  RF-DETR RFDETRSmall: resolution 512, export=False
+  [FLOP count via run_inference failed] AttributeError("'NoneType' object has no attribute 'next_functions'")
+Loading and preparing results...
+DONE (t=4.24s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=42.58s).
+Accumulating evaluation results...
+DONE (t=13.73s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.528
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.720
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.569
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.317
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.582
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.730
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.391
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.646
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.703
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.492
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.772
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.901
+{'detector': 'RF-DETR-S', 'lineage': 'DETR', 'ap': 52.8, 'ap50': 72.0, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 32.1, 'flops_G': 59.6, 'gpu_util_pct': 0.7, 'head': 'set', 'head_default': 'set', 'input': '512x512', 'lat_ms': 2.001, 'lat_range': 0.001, 'lat_ci95': 0.0, 'n_repeats': 10, 'lat_mean': 2.001, 'lat_p95': 2.004, 'lat_model_ms': 1.869, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.001, 'lat_eager_ms': 9.067}
+
+===== RF-DETR-M
+[2026-10-18 14:13:35] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-medium.pth already exists with correct MD5 hash.
+[2026-10-18 14:13:35] [WARNING] rf-detr - Using a different number of positional encodings than DINOv2, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 14:13:35] [WARNING] rf-detr - Using patch size 16 instead of 14, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 14:13:36] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-medium.pth already exists with correct MD5 hash.
+  RF-DETR RFDETRMedium: resolution 576, export=False
+  [FLOP count via run_inference failed] AttributeError("'NoneType' object has no attribute 'next_functions'")
+Loading and preparing results...
+DONE (t=4.59s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=42.84s).
+Accumulating evaluation results...
+DONE (t=13.97s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.547
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.735
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.590
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.359
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.598
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.737
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.400
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.663
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.722
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.533
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.787
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.903
+{'detector': 'RF-DETR-M', 'lineage': 'DETR', 'ap': 54.7, 'ap50': 73.5, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 33.7, 'flops_G': 78.6, 'gpu_util_pct': 0.7, 'head': 'set', 'head_default': 'set', 'input': '576x576', 'lat_ms': 2.171, 'lat_range': 0.001, 'lat_ci95': 0.0, 'n_repeats': 10, 'lat_mean': 2.171, 'lat_p95': 2.175, 'lat_model_ms': 2.039, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.171, 'lat_eager_ms': 9.697}
+
+===== RF-DETR-L
+[2026-10-18 14:16:21] [INFO] rf-detr - Downloading pretrained weights for /home/daljit/.roboflow/models/rf-detr-large-2026.pth
+/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   0%|          | 0.00/130M [00:00<?, ?iB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   0%|          | 47.0k/130M [00:00<13:58, 162kiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   0%|          | 79.0k/130M [00:00<15:49, 143kiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   0%|          | 127k/130M [00:00<10:05, 224kiB/s] /home/daljit/.roboflow/models/rf-detr-large-2026.pth:   0%|          | 159k/130M [00:00<09:04, 249kiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   0%|          | 223k/130M [00:00<06:47, 333kiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   0%|          | 287k/130M [00:00<05:28, 413kiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   0%|          | 399k/130M [00:01<03:47, 595kiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   0%|          | 525k/130M [00:01<02:52, 784kiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   1%|          | 671k/130M [00:01<02:20, 966kiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   1%|          | 911k/130M [00:01<01:38, 1.37MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   1%|          | 1.20M/130M [00:01<01:11, 1.89MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   1%|          | 1.58M/130M [00:01<00:53, 2.50MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   2%|▏         | 2.11M/130M [00:01<00:39, 3.37MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   2%|▏         | 2.81M/130M [00:01<00:29, 4.53MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   3%|▎         | 3.77M/130M [00:01<00:21, 6.12MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   4%|▍         | 5.03M/130M [00:02<00:15, 8.21MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   5%|▌         | 6.73M/130M [00:02<00:11, 11.1MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   6%|▋         | 8.34M/130M [00:02<00:09, 12.8MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   8%|▊         | 9.82M/130M [00:02<00:09, 13.6MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:   9%|▉         | 11.8M/130M [00:02<00:08, 14.7MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  10%|█         | 13.4M/130M [00:02<00:08, 14.8MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  12%|█▏        | 15.5M/130M [00:02<00:07, 15.8MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  13%|█▎        | 17.1M/130M [00:02<00:07, 15.8MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  15%|█▍        | 19.0M/130M [00:02<00:06, 17.1MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  16%|█▌        | 20.6M/130M [00:02<00:06, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  17%|█▋        | 22.4M/130M [00:03<00:06, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  18%|█▊        | 24.0M/130M [00:03<00:06, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  20%|█▉        | 25.8M/130M [00:03<00:06, 17.4MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  21%|██        | 27.5M/130M [00:03<00:06, 16.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  23%|██▎       | 29.5M/130M [00:03<00:06, 17.4MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  24%|██▍       | 31.2M/130M [00:03<00:06, 16.1MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  25%|██▌       | 33.0M/130M [00:03<00:05, 17.1MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  27%|██▋       | 34.7M/130M [00:03<00:06, 15.9MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  28%|██▊       | 36.5M/130M [00:03<00:05, 16.7MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  29%|██▉       | 38.1M/130M [00:04<00:05, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  31%|███       | 39.9M/130M [00:04<00:05, 16.8MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  32%|███▏      | 41.5M/130M [00:04<00:05, 15.6MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  34%|███▎      | 43.5M/130M [00:04<00:05, 17.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  35%|███▍      | 45.2M/130M [00:04<00:05, 15.9MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  36%|███▋      | 47.2M/130M [00:04<00:05, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  38%|███▊      | 48.8M/130M [00:04<00:05, 16.0MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  39%|███▉      | 50.9M/130M [00:04<00:04, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  40%|████      | 52.5M/130M [00:05<00:05, 16.1MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  42%|████▏     | 54.5M/130M [00:05<00:04, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  43%|████▎     | 56.1M/130M [00:05<00:04, 16.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  45%|████▍     | 58.1M/130M [00:05<00:04, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  46%|████▌     | 59.8M/130M [00:05<00:04, 16.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  48%|████▊     | 61.7M/130M [00:05<00:04, 17.0MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  49%|████▉     | 63.4M/130M [00:05<00:04, 16.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  50%|█████     | 65.3M/130M [00:05<00:03, 17.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  52%|█████▏    | 66.9M/130M [00:05<00:03, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  53%|█████▎    | 68.5M/130M [00:06<00:03, 16.4MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  54%|█████▍    | 70.2M/130M [00:06<00:03, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  55%|█████▌    | 71.8M/130M [00:06<00:03, 16.1MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  57%|█████▋    | 73.8M/130M [00:06<00:03, 17.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  58%|█████▊    | 75.5M/130M [00:06<00:03, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  60%|█████▉    | 77.2M/130M [00:06<00:03, 16.7MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  61%|██████    | 78.8M/130M [00:06<00:03, 16.0MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  62%|██████▏   | 80.7M/130M [00:06<00:03, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  64%|██████▎   | 82.3M/130M [00:06<00:03, 16.0MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  65%|██████▌   | 84.3M/130M [00:07<00:02, 16.9MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  66%|██████▋   | 86.0M/130M [00:07<00:02, 16.3MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  68%|██████▊   | 88.0M/130M [00:07<00:02, 17.5MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  69%|██████▉   | 89.6M/130M [00:07<00:02, 16.0MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  71%|███████   | 91.6M/130M [00:07<00:02, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  72%|███████▏  | 93.2M/130M [00:07<00:02, 16.0MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  73%|███████▎  | 95.3M/130M [00:07<00:02, 17.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  75%|███████▍  | 96.9M/130M [00:07<00:02, 16.1MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  76%|███████▋  | 98.9M/130M [00:07<00:01, 17.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  78%|███████▊  | 101M/130M [00:08<00:02, 13.7MiB/s] /home/daljit/.roboflow/models/rf-detr-large-2026.pth:  79%|███████▉  | 103M/130M [00:08<00:02, 12.8MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  82%|████████▏ | 106M/130M [00:08<00:01, 14.3MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  85%|████████▍ | 110M/130M [00:08<00:01, 19.1MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  86%|████████▋ | 112M/130M [00:08<00:01, 16.5MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  88%|████████▊ | 114M/130M [00:09<00:01, 14.6MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  90%|█████████ | 117M/130M [00:09<00:00, 15.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  93%|█████████▎| 121M/130M [00:09<00:00, 19.2MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  95%|█████████▍| 123M/130M [00:09<00:00, 16.6MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  96%|█████████▌| 125M/130M [00:09<00:00, 14.9MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth:  99%|█████████▉| 128M/130M [00:09<00:00, 15.4MiB/s]/home/daljit/.roboflow/models/rf-detr-large-2026.pth: 100%|██████████| 130M/130M [00:09<00:00, 13.6MiB/s]
+[2026-10-18 14:16:32] [INFO] rf-detr - MD5 validation successful for /home/daljit/.roboflow/models/rf-detr-large-2026.pth
+[2026-10-18 14:16:32] [WARNING] rf-detr - Using a different number of positional encodings than DINOv2, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 14:16:32] [WARNING] rf-detr - Using patch size 16 instead of 14, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 14:16:32] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-large-2026.pth already exists with correct MD5 hash.
+  RF-DETR RFDETRLarge: resolution 704, export=False
+  [FLOP count via run_inference failed] AttributeError("'NoneType' object has no attribute 'next_functions'")
+Loading and preparing results...
+DONE (t=4.43s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=45.13s).
+Accumulating evaluation results...
+DONE (t=12.53s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.565
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.751
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.613
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.389
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.611
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.741
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.409
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.681
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.743
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.575
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.794
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.911
+{'detector': 'RF-DETR-L', 'lineage': 'DETR', 'ap': 56.5, 'ap50': 75.1, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 33.9, 'flops_G': 125.1, 'gpu_util_pct': 0.7, 'head': 'set', 'head_default': 'set', 'input': '704x704', 'lat_ms': 2.443, 'lat_range': 0.003, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 2.444, 'lat_p95': 2.448, 'lat_model_ms': 2.31, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.44, 'lat_eager_ms': 9.705}
+
+===== YOLOv10-S (NMS)
+YOLOv10s summary: 129 layers, 8,096,880 parameters, 0 gradients, 24.9 GFLOPs
+  head: default=o2m  used=o2m
+Loading and preparing results...
+DONE (t=1.93s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=26.80s).
+Accumulating evaluation results...
+DONE (t=5.24s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.466
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.636
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.506
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.274
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.513
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.645
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.360
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.595
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.648
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.459
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.706
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.809
+{'detector': 'YOLOv10-S (NMS)', 'lineage': 'YOLO', 'ap': 46.6, 'ap50': 63.6, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2024, 'slice': '2024–2026', 'params_M': 8.1, 'flops_G': 24.9, 'gpu_util_pct': 0.7, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.03, 'lat_range': 0.008, 'lat_ci95': 0.002, 'n_repeats': 10, 'lat_mean': 2.033, 'lat_p95': 2.05, 'lat_model_ms': 1.701, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.077, 'lat_eager_ms': 5.991}
+
+===== YOLO26-S (NMS)
+YOLO26s summary: 146 layers, 9,990,792 parameters, 0 gradients, 22.8 GFLOPs
+  head: default=o2m  used=o2m
+Loading and preparing results...
+DONE (t=1.74s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=29.14s).
+Accumulating evaluation results...
+DONE (t=5.36s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.485
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.655
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.525
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.308
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.531
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.654
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.373
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.674
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.496
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.733
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.831
+{'detector': 'YOLO26-S (NMS)', 'lineage': 'YOLO', 'ap': 48.5, 'ap50': 65.5, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 10.0, 'flops_G': 22.8, 'gpu_util_pct': 0.7, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.32, 'lat_range': 0.003, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 2.326, 'lat_p95': 2.359, 'lat_model_ms': 1.986, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.373, 'lat_eager_ms': 7.099}
+
+===== YOLOv10-S (NMS-free)
+YOLOv10s summary (fused): 105 layers, 7,248,960 parameters, 0 gradients, 21.7 GFLOPs
+  head: default=o2m  used=o2o
+Loading and preparing results...
+DONE (t=1.19s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=26.99s).
+Accumulating evaluation results...
+DONE (t=4.80s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.460
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.628
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.500
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.266
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.505
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.632
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.357
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.594
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.653
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.473
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.706
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.808
+{'detector': 'YOLOv10-S (NMS-free)', 'lineage': 'YOLO', 'ap': 46.0, 'ap50': 62.8, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2024, 'slice': '2024–2026', 'params_M': 7.2, 'flops_G': 21.7, 'gpu_util_pct': 1.3, 'head': 'o2o', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 1.631, 'lat_range': 0.008, 'lat_ci95': 0.002, 'n_repeats': 10, 'lat_mean': 1.634, 'lat_p95': 1.644, 'lat_model_ms': 1.553, 'timing': 'cuda_graph', 'lat_conf001_ms': 1.634, 'lat_eager_ms': 4.914}
+
+===== YOLO26-S (NMS-free)
+YOLO26s summary (fused): 122 layers, 9,496,140 parameters, 0 gradients, 20.9 GFLOPs
+  head: default=o2m  used=o2o
+Loading and preparing results...
+DONE (t=1.87s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=27.87s).
+Accumulating evaluation results...
+DONE (t=5.01s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.477
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.643
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.519
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.302
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.523
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.642
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.369
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.621
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.683
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.507
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.738
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.834
+{'detector': 'YOLO26-S (NMS-free)', 'lineage': 'YOLO', 'ap': 47.7, 'ap50': 64.3, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 9.5, 'flops_G': 20.9, 'gpu_util_pct': 1.7, 'head': 'o2o', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 1.93, 'lat_range': 0.002, 'lat_ci95': 0.0, 'n_repeats': 10, 'lat_mean': 1.932, 'lat_p95': 1.94, 'lat_model_ms': 1.846, 'timing': 'cuda_graph', 'lat_conf001_ms': 1.931, 'lat_eager_ms': 5.966}
+
+===== YOLOv10-M (NMS)
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 0% ──────────── 230.0KB/32.1MB 2.2MB/s 0.1s<14.4s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 3% ──────────── 1.2/32.1MB 9.9MB/s 0.2s<3.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 11% ━─────────── 3.8/32.1MB 21.8MB/s 0.3s<1.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 24% ━━╸───────── 7.9/32.1MB 22.3MB/s 0.5s<1.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 31% ━━━╸──────── 10.0/32.1MB 7.8MB/s 0.8s<2.8s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 38% ━━━━╸─────── 12.4/32.1MB 24.1MB/s 0.9s<0.8s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 43% ━━━━━─────── 14.1/32.1MB 6.4MB/s 1.1s<2.8s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 47% ━━━━━╸────── 15.3/32.1MB 10.4MB/s 1.3s<1.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 47% ━━━━━╸────── 15.3/32.1MB 79.8KB/s 1.4s<3:35[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 61% ━━━━━━━───── 19.6/32.1MB 42.6MB/s 1.5s<0.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 62% ━━━━━━━───── 20.0/32.1MB 1.8MB/s 1.7s<6.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 66% ━━━━━━━╸──── 21.3/32.1MB 12.5MB/s 1.8s<0.9s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 69% ━━━━━━━━──── 22.2/32.1MB 7.6MB/s 1.9s<1.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 73% ━━━━━━━━╸─── 23.5/32.1MB 12.8MB/s 2.0s<0.7s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 77% ━━━━━━━━━─── 24.9/32.1MB 14.1MB/s 2.1s<0.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 84% ━━━━━━━━━━── 27.3/32.1MB 23.3MB/s 2.2s<0.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 92% ━━━━━━━━━━━─ 29.7/32.1MB 23.7MB/s 2.3s<0.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 93% ━━━━━━━━━━━─ 30.0/32.1MB 1.3MB/s 2.6s<1.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10m.pt to 'yolov10m.pt': 100% ━━━━━━━━━━━━ 32.1MB 12.2MB/s 2.6s
+YOLOv10m summary: 159 layers, 16,543,024 parameters, 0 gradients, 64.1 GFLOPs
+  head: default=o2m  used=o2m
+Loading and preparing results...
+DONE (t=1.39s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=25.41s).
+Accumulating evaluation results...
+DONE (t=4.58s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.513
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.684
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.560
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.340
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.569
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.675
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.386
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.638
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.689
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.523
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.750
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.835
+{'detector': 'YOLOv10-M (NMS)', 'lineage': 'YOLO', 'ap': 51.3, 'ap50': 68.4, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2024, 'slice': '2024–2026', 'params_M': 16.5, 'flops_G': 64.1, 'gpu_util_pct': 0.7, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.762, 'lat_range': 0.006, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 2.767, 'lat_p95': 2.784, 'lat_model_ms': 2.428, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.812, 'lat_eager_ms': 7.467}
+
+===== YOLO26-M (NMS)
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 0% ──────────── 216.1KB/42.2MB 2.1MB/s 0.1s<20.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 2% ──────────── 1.2/42.2MB 9.8MB/s 0.2s<4.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 7% ╸─────────── 3.0/42.2MB 17.4MB/s 0.3s<2.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 21% ━━╸───────── 8.9/42.2MB 51.3MB/s 0.4s<0.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 23% ━━╸───────── 10.0/42.2MB 9.2MB/s 0.5s<3.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 34% ━━━━──────── 14.4/42.2MB 43.8MB/s 0.6s<0.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 44% ━━━━━─────── 18.7/42.2MB 41.2MB/s 0.7s<0.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 47% ━━━━━╸────── 20.0/42.2MB 10.0MB/s 0.9s<2.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 57% ━━━━━━╸───── 24.5/42.2MB 44.6MB/s 1.0s<0.4s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 68% ━━━━━━━━──── 28.9/42.2MB 41.7MB/s 1.1s<0.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 71% ━━━━━━━━╸─── 30.0/42.2MB 8.6MB/s 1.2s<1.4s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 81% ━━━━━━━━━╸── 34.6/42.2MB 45.5MB/s 1.3s<0.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 92% ━━━━━━━━━━━─ 39.0/42.2MB 42.4MB/s 1.4s<0.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 94% ━━━━━━━━━━━─ 40.0/42.2MB 8.0MB/s 1.5s<0.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 96% ━━━━━━━━━━━╸ 40.7/42.2MB 7.1MB/s 1.6s<0.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 97% ━━━━━━━━━━━╸ 41.3/42.2MB 4.4MB/s 1.8s<0.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 99% ━━━━━━━━━━━╸ 42.0/42.2MB 7.2MB/s 1.9s<0.0s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26m.pt to 'yolo26m.pt': 100% ━━━━━━━━━━━━ 42.2MB 22.2MB/s 1.9s
+YOLO26m summary: 156 layers, 21,868,152 parameters, 0 gradients, 75.0 GFLOPs
+  head: default=o2m  used=o2m
+Loading and preparing results...
+DONE (t=1.12s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=27.00s).
+Accumulating evaluation results...
+DONE (t=4.87s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.532
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.708
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.579
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.364
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.578
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.692
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.391
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.655
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.710
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.553
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.761
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.853
+{'detector': 'YOLO26-M (NMS)', 'lineage': 'YOLO', 'ap': 53.2, 'ap50': 70.8, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 21.9, 'flops_G': 75.0, 'gpu_util_pct': 0.7, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.819, 'lat_range': 0.011, 'lat_ci95': 0.002, 'n_repeats': 10, 'lat_mean': 2.824, 'lat_p95': 2.857, 'lat_model_ms': 2.459, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.875, 'lat_eager_ms': 7.497}
+
+===== YOLOv10-M (NMS-free)
+YOLOv10m summary (fused): 135 layers, 15,359,488 parameters, 0 gradients, 59.2 GFLOPs
+  head: default=o2m  used=o2o
+Loading and preparing results...
+DONE (t=1.01s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=25.14s).
+Accumulating evaluation results...
+DONE (t=4.26s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.509
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.678
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.555
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.335
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.564
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.664
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.384
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.637
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.693
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.535
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.749
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.832
+{'detector': 'YOLOv10-M (NMS-free)', 'lineage': 'YOLO', 'ap': 50.9, 'ap50': 67.8, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2024, 'slice': '2024–2026', 'params_M': 15.4, 'flops_G': 59.2, 'gpu_util_pct': 2.0, 'head': 'o2o', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.339, 'lat_range': 0.006, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 2.341, 'lat_p95': 2.348, 'lat_model_ms': 2.252, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.342, 'lat_eager_ms': 6.312}
+
+===== YOLO26-M (NMS-free)
+YOLO26m summary (fused): 132 layers, 20,411,132 parameters, 0 gradients, 68.4 GFLOPs
+  head: default=o2m  used=o2o
+Loading and preparing results...
+DONE (t=1.24s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=25.99s).
+Accumulating evaluation results...
+DONE (t=4.65s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.525
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.697
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.573
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.357
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.569
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.686
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.389
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.658
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.721
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.568
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.770
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.865
+{'detector': 'YOLO26-M (NMS-free)', 'lineage': 'YOLO', 'ap': 52.5, 'ap50': 69.7, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 20.4, 'flops_G': 68.4, 'gpu_util_pct': 1.7, 'head': 'o2o', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.362, 'lat_range': 0.006, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 2.362, 'lat_p95': 2.371, 'lat_model_ms': 2.275, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.365, 'lat_eager_ms': 6.441}
+
+===== YOLOv10-L (NMS)
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 0% ──────────── 307.2KB/50.0MB 2.6MB/s 0.1s<19.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 3% ──────────── 1.7/50.0MB 5.4MB/s 0.4s<8.9s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 4% ╸─────────── 2.2/50.0MB 2.0MB/s 0.6s<24.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 8% ━─────────── 4.2/50.0MB 19.8MB/s 0.7s<2.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 8% ━─────────── 4.4/50.0MB 1.5MB/s 0.8s<30.0s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 12% ━╸────────── 6.4/50.0MB 19.8MB/s 0.9s<2.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 17% ━━────────── 8.8/50.0MB 18.1MB/s 1.1s<2.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 20% ━━────────── 10.0/50.0MB 3.4MB/s 1.5s<11.9s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 23% ━━╸───────── 11.9/50.0MB 17.8MB/s 1.6s<2.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 30% ━━━╸──────── 15.4/50.0MB 13.8MB/s 1.8s<2.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 34% ━━━━──────── 17.0/50.0MB 6.8MB/s 2.0s<4.8s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 40% ━━━━╸─────── 20.0/50.0MB 9.2MB/s 2.4s<3.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 46% ━━━━━╸────── 23.0/50.0MB 28.5MB/s 2.5s<0.9s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 50% ━━━━━━────── 25.4/50.0MB 18.5MB/s 2.6s<1.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 56% ━━━━━━╸───── 28.3/50.0MB 28.4MB/s 2.7s<0.8s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 60% ━━━━━━━───── 30.0/50.0MB 6.2MB/s 3.0s<3.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 60% ━━━━━━━───── 30.2/50.0MB 217.1KB/s 3.2s<1:33[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 60% ━━━━━━━───── 30.3/50.0MB 424.2KB/s 3.3s<47.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 60% ━━━━━━━───── 30.4/50.0MB 1.3MB/s 3.4s<14.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 61% ━━━━━━━───── 30.6/50.0MB 1.9MB/s 3.5s<10.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 61% ━━━━━━━───── 30.8/50.0MB 1.8MB/s 3.6s<10.7s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 62% ━━━━━━━───── 31.2/50.0MB 3.5MB/s 3.7s<5.4s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 63% ━━━━━━━╸──── 31.6/50.0MB 4.2MB/s 3.9s<4.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 64% ━━━━━━━╸──── 32.2/50.0MB 5.2MB/s 4.0s<3.4s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 65% ━━━━━━━╸──── 33.0/50.0MB 7.7MB/s 4.1s<2.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 68% ━━━━━━━━──── 34.0/50.0MB 10.3MB/s 4.2s<1.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 70% ━━━━━━━━──── 35.4/50.0MB 13.5MB/s 4.3s<1.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 74% ━━━━━━━━╸─── 37.2/50.0MB 18.1MB/s 4.4s<0.7s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 78% ━━━━━━━━━─── 39.1/50.0MB 18.5MB/s 4.5s<0.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 80% ━━━━━━━━━╸── 40.0/50.0MB 1.1MB/s 5.3s<8.9s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 80% ━━━━━━━━━╸── 40.1/50.0MB 372.0KB/s 5.5s<27.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 80% ━━━━━━━━━╸── 40.2/50.0MB 475.0KB/s 5.7s<21.0s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 80% ━━━━━━━━━╸── 40.5/50.0MB 2.1MB/s 5.8s<4.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 81% ━━━━━━━━━╸── 40.5/50.0MB 479.3KB/s 5.9s<20.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 81% ━━━━━━━━━╸── 40.9/50.0MB 3.8MB/s 6.0s<2.4s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 82% ━━━━━━━━━╸── 41.1/50.0MB 1.8MB/s 6.1s<5.0s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 83% ━━━━━━━━━━── 41.8/50.0MB 6.8MB/s 6.2s<1.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 84% ━━━━━━━━━━── 42.3/50.0MB 4.1MB/s 6.4s<1.9s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 87% ━━━━━━━━━━── 43.7/50.0MB 13.4MB/s 6.5s<0.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 89% ━━━━━━━━━━╸─ 44.8/50.0MB 8.5MB/s 6.6s<0.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 94% ━━━━━━━━━━━─ 47.5/50.0MB 26.7MB/s 6.7s<0.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 99% ━━━━━━━━━━━╸ 49.7/50.0MB 17.6MB/s 6.8s<0.0s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov10l.pt to 'yolov10l.pt': 100% ━━━━━━━━━━━━ 50.0MB 7.3MB/s 6.8s
+YOLOv10l summary: 197 layers, 25,839,728 parameters, 0 gradients, 127.1 GFLOPs
+  head: default=o2m  used=o2m
+Loading and preparing results...
+DONE (t=1.66s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=23.60s).
+Accumulating evaluation results...
+DONE (t=4.16s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.532
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.704
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.580
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.361
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.590
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.698
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.395
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.653
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.704
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.538
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.763
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.857
+{'detector': 'YOLOv10-L (NMS)', 'lineage': 'YOLO', 'ap': 53.2, 'ap50': 70.4, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2024, 'slice': '2024–2026', 'params_M': 25.8, 'flops_G': 127.1, 'gpu_util_pct': 1.3, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 3.474, 'lat_range': 0.011, 'lat_ci95': 0.003, 'n_repeats': 10, 'lat_mean': 3.479, 'lat_p95': 3.507, 'lat_model_ms': 3.104, 'timing': 'cuda_graph', 'lat_conf001_ms': 3.518, 'lat_eager_ms': 8.798}
+
+===== YOLO26-L (NMS)
+[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 0% ──────────── 207.9KB/50.7MB 1.9MB/s 0.1s<26.6s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 2% ──────────── 1.2/50.7MB 9.1MB/s 0.2s<5.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 6% ╸─────────── 3.4/50.7MB 19.2MB/s 0.3s<2.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 16% ━╸────────── 8.2/50.7MB 39.9MB/s 0.5s<1.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 19% ━━────────── 10.0/50.7MB 17.5MB/s 0.6s<2.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 32% ━━━╸──────── 16.6/50.7MB 43.8MB/s 0.7s<0.8s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 39% ━━━━╸─────── 20.0/50.7MB 23.4MB/s 0.9s<1.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 48% ━━━━━╸────── 24.8/50.7MB 47.7MB/s 1.0s<0.5s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 49% ━━━━━╸────── 25.3/50.7MB 3.6MB/s 1.1s<7.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 59% ━━━━━━━───── 30.0/50.7MB 15.4MB/s 1.4s<1.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 68% ━━━━━━━━──── 34.9/50.7MB 48.2MB/s 1.5s<0.3s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 78% ━━━━━━━━━─── 39.7/50.7MB 48.3MB/s 1.6s<0.2s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 78% ━━━━━━━━━─── 40.0/50.7MB 2.2MB/s 1.7s<4.8s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 88% ━━━━━━━━━━╸─ 45.0/50.7MB 49.3MB/s 1.8s<0.1s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 98% ━━━━━━━━━━━╸ 50.0/50.7MB 49.7MB/s 1.9s<0.0s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 98% ━━━━━━━━━━━╸ 50.0/50.7MB 26.1KB/s 2.5s<27.9s[KDownloading https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26l.pt to 'yolo26l.pt': 100% ━━━━━━━━━━━━ 50.7MB 20.0MB/s 2.5s
+YOLO26l summary: 214 layers, 26,264,440 parameters, 0 gradients, 93.4 GFLOPs
+  head: default=o2m  used=o2m
+Loading and preparing results...
+DONE (t=1.26s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=24.81s).
+Accumulating evaluation results...
+DONE (t=4.53s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.549
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.723
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.599
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.379
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.593
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.708
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.401
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.670
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.724
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.566
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.777
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.859
+{'detector': 'YOLO26-L (NMS)', 'lineage': 'YOLO', 'ap': 54.9, 'ap50': 72.3, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 26.3, 'flops_G': 93.4, 'gpu_util_pct': 2.0, 'head': 'o2m', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 3.736, 'lat_range': 0.007, 'lat_ci95': 0.002, 'n_repeats': 10, 'lat_mean': 3.737, 'lat_p95': 3.763, 'lat_model_ms': 3.361, 'timing': 'cuda_graph', 'lat_conf001_ms': 3.766, 'lat_eager_ms': 10.089}
+
+===== YOLOv10-L (NMS-free)
+YOLOv10l summary (fused): 173 layers, 24,371,008 parameters, 0 gradients, 120.5 GFLOPs
+  head: default=o2m  used=o2o
+Loading and preparing results...
+DONE (t=0.99s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=23.22s).
+Accumulating evaluation results...
+DONE (t=3.93s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.528
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.697
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.577
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.354
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.581
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.691
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.394
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.652
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.707
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.538
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.759
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.857
+{'detector': 'YOLOv10-L (NMS-free)', 'lineage': 'YOLO', 'ap': 52.8, 'ap50': 69.7, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2024, 'slice': '2024–2026', 'params_M': 24.4, 'flops_G': 120.5, 'gpu_util_pct': 1.7, 'head': 'o2o', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 3.009, 'lat_range': 0.002, 'lat_ci95': 0.0, 'n_repeats': 10, 'lat_mean': 3.009, 'lat_p95': 3.017, 'lat_model_ms': 2.921, 'timing': 'cuda_graph', 'lat_conf001_ms': 3.009, 'lat_eager_ms': 7.746}
+
+===== YOLO26-L (NMS-free)
+YOLO26l summary (fused): 190 layers, 24,807,420 parameters, 0 gradients, 86.8 GFLOPs
+  head: default=o2m  used=o2o
+Loading and preparing results...
+DONE (t=1.54s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=26.27s).
+Accumulating evaluation results...
+DONE (t=4.43s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.541
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.712
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.591
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.366
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.583
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.698
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.399
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.672
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.733
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.577
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.782
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.872
+{'detector': 'YOLO26-L (NMS-free)', 'lineage': 'YOLO', 'ap': 54.1, 'ap50': 71.2, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 24.8, 'flops_G': 86.8, 'gpu_util_pct': 1.7, 'head': 'o2o', 'head_default': 'o2m', 'input': '640x640', 'lat_ms': 2.962, 'lat_range': 0.003, 'lat_ci95': 0.001, 'n_repeats': 10, 'lat_mean': 3.019, 'lat_p95': 3.573, 'lat_model_ms': 2.871, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.963, 'lat_eager_ms': 8.871}
+
+===== summary (timing modes in CSV: ['cuda_graph'])
+  YOLOv5-S                 AP= 37.5  lat= 1.472 ±  0.0 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv5-M                 AP= 45.2  lat= 2.169 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv5-L                 AP= 49.0  lat= 2.734 ±0.003 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv7                   AP= 51.1  lat= 2.816 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  DETR-R50                 AP= 36.5  lat=  3.21 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  Deformable DETR-R50      AP= 40.4  lat=12.112 ±0.008 ms  cuda_graph head=set/set  in=640x640
+  YOLOv12-S                AP= 47.7  lat=  2.39 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv12-M                AP= 52.3  lat= 2.958 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv12-L                AP= 53.5  lat= 4.566 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  RT-DETRv2-S              AP= 48.1  lat= 2.945 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  RT-DETRv2-M              AP= 49.9  lat= 3.813 ±0.001 ms  cuda_graph head=set/set  in=640x640
+  RT-DETRv2-L              AP= 53.4  lat= 4.792 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  D-FINE-S                 AP= 48.5  lat=  3.68 ±0.002 ms  cuda_graph head=set/set  in=640x640
+  D-FINE-M                 AP= 52.2  lat= 4.955 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  D-FINE-L                 AP= 53.9  lat= 6.111 ±0.001 ms  cuda_graph head=set/set  in=640x640
+  RF-DETR-S                AP= 52.8  lat= 2.001 ±  0.0 ms  cuda_graph head=set/set  in=512x512
+  RF-DETR-M                AP= 54.7  lat= 2.171 ±  0.0 ms  cuda_graph head=set/set  in=576x576
+  RF-DETR-L                AP= 56.5  lat= 2.443 ±0.001 ms  cuda_graph head=set/set  in=704x704
+  YOLOv10-S (NMS)          AP= 46.6  lat=  2.03 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLO26-S (NMS)           AP= 48.5  lat=  2.32 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv10-S (NMS-free)     AP= 46.0  lat= 1.631 ±0.002 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLO26-S (NMS-free)      AP= 47.7  lat=  1.93 ±  0.0 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLOv10-M (NMS)          AP= 51.3  lat= 2.762 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLO26-M (NMS)           AP= 53.2  lat= 2.819 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv10-M (NMS-free)     AP= 50.9  lat= 2.339 ±0.001 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLO26-M (NMS-free)      AP= 52.5  lat= 2.362 ±0.001 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLOv10-L (NMS)          AP= 53.2  lat= 3.474 ±0.003 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLO26-L (NMS)           AP= 54.9  lat= 3.736 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv10-L (NMS-free)     AP= 52.8  lat= 3.009 ±  0.0 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLO26-L (NMS-free)      AP= 54.1  lat= 2.962 ±0.001 ms  cuda_graph head=o2o/o2m  in=640x640

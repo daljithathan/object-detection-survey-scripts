@@ -1,0 +1,134 @@
+ultralytics from /home/daljit/bench_env/lib/python3.14/site-packages/ultralytics  -> standard environment
+loading annotations into memory...
+Done (t=0.37s)
+creating index...
+index created!
+  baseline GPU: util=2.0%  mem_used=10560.0 MiB  -> results_v4/env.json
+
+===== RF-DETR-S@640
+[2026-10-18 15:10:16] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-small.pth already exists with correct MD5 hash.
+[2026-10-18 15:10:16] [WARNING] rf-detr - Using a different number of positional encodings than DINOv2, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 15:10:16] [WARNING] rf-detr - Using patch size 16 instead of 14, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 15:10:17] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-small.pth already exists with correct MD5 hash.
+  RF-DETR RFDETRSmall: resolution 640, export=False
+  [FLOP count via run_inference failed] AttributeError("'NoneType' object has no attribute 'next_functions'")
+  [WARNING] GPU already 6.0% busy before timing
+Loading and preparing results...
+DONE (t=3.53s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=44.75s).
+Accumulating evaluation results...
+DONE (t=11.84s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.548
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.739
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.595
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.360
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.597
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.727
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.402
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.667
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.727
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.544
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.788
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.902
+{'detector': 'RF-DETR-S@640', 'lineage': 'DETR', 'ap': 54.8, 'ap50': 73.9, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 32.3, 'flops_G': 98.6, 'gpu_util_pct': 6.0, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 1.968, 'lat_range': 0.191, 'lat_ci95': 0.043, 'n_repeats': 10, 'lat_mean': 1.993, 'lat_p95': 2.159, 'lat_model_ms': 1.841, 'timing': 'cuda_graph', 'lat_conf001_ms': 1.967, 'lat_eager_ms': 8.954}
+
+===== RF-DETR-M@640
+[2026-10-18 15:13:00] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-medium.pth already exists with correct MD5 hash.
+[2026-10-18 15:13:00] [WARNING] rf-detr - Using a different number of positional encodings than DINOv2, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 15:13:00] [WARNING] rf-detr - Using patch size 16 instead of 14, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 15:13:01] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-medium.pth already exists with correct MD5 hash.
+  RF-DETR RFDETRMedium: resolution 640, export=False
+  [FLOP count via run_inference failed] AttributeError("'NoneType' object has no attribute 'next_functions'")
+Loading and preparing results...
+DONE (t=3.47s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=44.54s).
+Accumulating evaluation results...
+DONE (t=11.87s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.553
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.742
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.601
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.367
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.602
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.736
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.404
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.672
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.733
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.552
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.792
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.907
+{'detector': 'RF-DETR-M@640', 'lineage': 'DETR', 'ap': 55.3, 'ap50': 74.2, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 33.8, 'flops_G': 99.9, 'gpu_util_pct': 1.0, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 2.081, 'lat_range': 0.202, 'lat_ci95': 0.061, 'n_repeats': 10, 'lat_mean': 2.116, 'lat_p95': 2.284, 'lat_model_ms': 1.954, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.076, 'lat_eager_ms': 9.741}
+
+===== RF-DETR-L@640
+[2026-10-18 15:15:44] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-large-2026.pth already exists with correct MD5 hash.
+[2026-10-18 15:15:44] [WARNING] rf-detr - Using a different number of positional encodings than DINOv2, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 15:15:44] [WARNING] rf-detr - Using patch size 16 instead of 14, which means we're not loading DINOv2 backbone weights. This is not a problem if finetuning a pretrained RF-DETR model.
+[2026-10-18 15:15:45] [INFO] rf-detr - File /home/daljit/.roboflow/models/rf-detr-large-2026.pth already exists with correct MD5 hash.
+  RF-DETR RFDETRLarge: resolution 640, export=False
+  [FLOP count via run_inference failed] AttributeError("'NoneType' object has no attribute 'next_functions'")
+Loading and preparing results...
+DONE (t=3.55s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=44.84s).
+Accumulating evaluation results...
+DONE (t=11.98s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.554
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.742
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.600
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.364
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.604
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.736
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.405
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.671
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.731
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.548
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.792
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.904
+{'detector': 'RF-DETR-L@640', 'lineage': 'DETR', 'ap': 55.4, 'ap50': 74.2, 'gpu': 'NVIDIA H100 NVL', 'precision': 'FP16', 'n_images': 5000, 'year': 2026, 'slice': '2024–2026', 'params_M': 33.8, 'flops_G': 99.9, 'gpu_util_pct': 1.0, 'head': 'set', 'head_default': 'set', 'input': '640x640', 'lat_ms': 2.082, 'lat_range': 0.199, 'lat_ci95': 0.045, 'n_repeats': 10, 'lat_mean': 2.096, 'lat_p95': 2.28, 'lat_model_ms': 1.955, 'timing': 'cuda_graph', 'lat_conf001_ms': 2.081, 'lat_eager_ms': 9.721}
+
+===== summary (timing modes in CSV: ['cuda_graph'])
+  YOLOv5-S                 AP= 37.5  lat= 1.472 ±  0.0 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv5-M                 AP= 45.2  lat= 2.169 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv5-L                 AP= 49.0  lat= 2.734 ±0.003 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv7                   AP= 51.1  lat= 2.816 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  DETR-R50                 AP= 36.5  lat=  3.21 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  Deformable DETR-R50      AP= 40.4  lat=12.112 ±0.008 ms  cuda_graph head=set/set  in=640x640
+  YOLOv12-S                AP= 47.7  lat=  2.39 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv12-M                AP= 52.3  lat= 2.958 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv12-L                AP= 53.5  lat= 4.566 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  RT-DETRv2-S              AP= 48.1  lat= 2.945 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  RT-DETRv2-M              AP= 49.9  lat= 3.813 ±0.001 ms  cuda_graph head=set/set  in=640x640
+  RT-DETRv2-L              AP= 53.4  lat= 4.792 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  D-FINE-S                 AP= 48.5  lat=  3.68 ±0.002 ms  cuda_graph head=set/set  in=640x640
+  D-FINE-M                 AP= 52.2  lat= 4.955 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  D-FINE-L                 AP= 53.9  lat= 6.111 ±0.001 ms  cuda_graph head=set/set  in=640x640
+  RF-DETR-S                AP= 52.8  lat= 2.001 ±  0.0 ms  cuda_graph head=set/set  in=512x512
+  RF-DETR-M                AP= 54.7  lat= 2.171 ±  0.0 ms  cuda_graph head=set/set  in=576x576
+  RF-DETR-L                AP= 56.5  lat= 2.443 ±0.001 ms  cuda_graph head=set/set  in=704x704
+  YOLOv10-S (NMS)          AP= 46.6  lat=  2.03 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLO26-S (NMS)           AP= 48.5  lat=  2.32 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv10-S (NMS-free)     AP= 46.0  lat= 1.631 ±0.002 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLO26-S (NMS-free)      AP= 47.7  lat=  1.93 ±  0.0 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLOv10-M (NMS)          AP= 51.3  lat= 2.762 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLO26-M (NMS)           AP= 53.2  lat= 2.819 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv10-M (NMS-free)     AP= 50.9  lat= 2.339 ±0.001 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLO26-M (NMS-free)      AP= 52.5  lat= 2.362 ±0.001 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLOv10-L (NMS)          AP= 53.2  lat= 3.474 ±0.003 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLO26-L (NMS)           AP= 54.9  lat= 3.736 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv10-L (NMS-free)     AP= 52.8  lat= 3.009 ±  0.0 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLO26-L (NMS-free)      AP= 54.1  lat= 2.962 ±0.001 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLOv13-S                AP= 47.8  lat= 2.813 ±0.063 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv13-L                AP= 53.1  lat= 5.687 ±0.003 ms  cuda_graph head=o2m/o2m  in=640x640
+  RF-DETR-S@640            AP= 54.8  lat= 1.968 ±0.043 ms  cuda_graph head=set/set  in=640x640
+  RF-DETR-M@640            AP= 55.3  lat= 2.081 ±0.061 ms  cuda_graph head=set/set  in=640x640
+  RF-DETR-L@640            AP= 55.4  lat= 2.082 ±0.045 ms  cuda_graph head=set/set  in=640x640

@@ -1,0 +1,110 @@
+ultralytics from /home/daljit/bench_env/lib/python3.14/site-packages/ultralytics  -> standard environment
+loading annotations into memory...
+Done (t=0.38s)
+creating index...
+index created!
+  baseline GPU: util=73.0%  mem_used=10560.0 MiB  -> results_v4/env.json
+
+===== DETR-R50
+Loading weights:   0%|          | 0/530 [00:00<?, ?it/s]Loading weights: 100%|██████████| 530/530 [00:00<00:00, 8429.93it/s]
+[transformers] [1mDetrForObjectDetection LOAD REPORT[0m from: facebook/detr-resnet-50
+Key                                                            | Status     |  | 
+---------------------------------------------------------------+------------+--+-
+model.backbone.model.layer3.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer2.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer1.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer4.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading and preparing results...
+DONE (t=1.39s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=21.18s).
+Accumulating evaluation results...
+DONE (t=3.85s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.420
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.623
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.442
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.211
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.458
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.611
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.334
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.533
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.575
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.317
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.630
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.806
+DETR-R50 AP@native = 42.0
+
+===== Deformable DETR-R50
+Loading weights:   0%|          | 0/545 [00:00<?, ?it/s]Loading weights: 100%|██████████| 545/545 [00:00<00:00, 7493.17it/s]
+[transformers] [1mDeformableDetrForObjectDetection LOAD REPORT[0m from: SenseTime/deformable-detr
+Key                                                            | Status     |  | 
+---------------------------------------------------------------+------------+--+-
+model.backbone.model.layer3.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer2.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer1.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+model.backbone.model.layer4.0.downsample.1.num_batches_tracked | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading and preparing results...
+DONE (t=1.52s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=21.91s).
+Accumulating evaluation results...
+DONE (t=5.26s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.446
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.638
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.487
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.268
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.478
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.597
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.352
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.589
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.631
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.420
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.676
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.820
+Deformable DETR-R50 AP@native = 44.6
+
+===== summary (timing modes in CSV: ['cuda_graph'])
+  YOLOv5-S                 AP= 37.5  lat= 1.472 ±  0.0 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv5-M                 AP= 45.2  lat= 2.169 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv5-L                 AP= 49.0  lat= 2.734 ±0.003 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv7                   AP= 51.1  lat= 2.816 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  DETR-R50                 AP= 36.5  lat=  3.21 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  Deformable DETR-R50      AP= 40.4  lat=12.112 ±0.008 ms  cuda_graph head=set/set  in=640x640
+  YOLOv12-S                AP= 47.7  lat=  2.39 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv12-M                AP= 52.3  lat= 2.958 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv12-L                AP= 53.5  lat= 4.566 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  RT-DETRv2-S              AP= 48.1  lat= 2.945 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  RT-DETRv2-M              AP= 49.9  lat= 3.813 ±0.001 ms  cuda_graph head=set/set  in=640x640
+  RT-DETRv2-L              AP= 53.4  lat= 4.792 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  D-FINE-S                 AP= 48.5  lat=  3.68 ±0.002 ms  cuda_graph head=set/set  in=640x640
+  D-FINE-M                 AP= 52.2  lat= 4.955 ±  0.0 ms  cuda_graph head=set/set  in=640x640
+  D-FINE-L                 AP= 53.9  lat= 6.111 ±0.001 ms  cuda_graph head=set/set  in=640x640
+  RF-DETR-S                AP= 52.8  lat= 2.001 ±  0.0 ms  cuda_graph head=set/set  in=512x512
+  RF-DETR-M                AP= 54.7  lat= 2.171 ±  0.0 ms  cuda_graph head=set/set  in=576x576
+  RF-DETR-L                AP= 56.5  lat= 2.443 ±0.001 ms  cuda_graph head=set/set  in=704x704
+  YOLOv10-S (NMS)          AP= 46.6  lat=  2.03 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLO26-S (NMS)           AP= 48.5  lat=  2.32 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv10-S (NMS-free)     AP= 46.0  lat= 1.631 ±0.002 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLO26-S (NMS-free)      AP= 47.7  lat=  1.93 ±  0.0 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLOv10-M (NMS)          AP= 51.3  lat= 2.762 ±0.001 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLO26-M (NMS)           AP= 53.2  lat= 2.819 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv10-M (NMS-free)     AP= 50.9  lat= 2.339 ±0.001 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLO26-M (NMS-free)      AP= 52.5  lat= 2.362 ±0.001 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLOv10-L (NMS)          AP= 53.2  lat= 3.474 ±0.003 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLO26-L (NMS)           AP= 54.9  lat= 3.736 ±0.002 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv10-L (NMS-free)     AP= 52.8  lat= 3.009 ±  0.0 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLO26-L (NMS-free)      AP= 54.1  lat= 2.962 ±0.001 ms  cuda_graph head=o2o/o2m  in=640x640
+  YOLOv13-S                AP= 47.8  lat= 3.134 ±0.106 ms  cuda_graph head=o2m/o2m  in=640x640
+  YOLOv13-L                AP= 53.1  lat=10.442 ±1.647 ms  cuda_graph head=o2m/o2m  in=640x640
